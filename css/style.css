@@ -89,6 +89,13 @@ nav ul a i{
     margin-right: 16px;
 }
 
+nav ul li.current a{
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: rgb(50, 50, 155);
+    color: white;
+}
+
 #checkbox {
     display: none;
 }
@@ -254,11 +261,18 @@ h1{
 
 #ch{
     width: 20px;
-    height: 12px;
+    height: 35px;
+    vertical-align: middle;
 }
 
 .pas ol li, .pan ol li, .cake ol li{
     padding: 5px;
+    font-size: 18px;
+}
+
+ul li label{
+    font-size: 18px;
+    vertical-align: middle;
 }
 
 #main .pas .pastaimg{
