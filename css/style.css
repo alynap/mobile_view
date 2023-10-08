@@ -138,6 +138,9 @@ label #xout{
     transition: 1s ease;
 }
 
+.visually-hidden{
+    display: none;
+}
 
 /* For Travel */
 #main {
