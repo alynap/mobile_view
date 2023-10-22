@@ -7,6 +7,34 @@
     text-decoration: none;
 }
 
+@keyframes nav-animation {
+    0% {
+    }
+    100% {
+        border: 2px solid;
+        background-color: white;
+    }
+}
+
+@keyframes exit-button {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 190px;
+    }
+}
+
+@keyframes nav-bar {
+    100% {
+        left: 0;
+    }
+}
+
 /* Title, skip to main, nav button */
 .title-box {
     text-align: center;
@@ -80,9 +108,7 @@ ul li:hover a, ul li:active a{
 }
 
 ul li:hover, ul li:active{
-    border: 2px solid;
-    background-color: white;
-    transition: .2s ease;
+    animation: nav-animation .2s ease forwards;
 }
 
 nav ul a i{
@@ -124,8 +150,7 @@ label #xout{
 }
 
 #checkbox:checked ~ nav{
-    left: 0;
-    transition: .5s ease-in;
+    animation: nav-bar .5s ease-in forwards;
 }
 
 #checkbox:checked ~ label #open{
@@ -134,8 +159,7 @@ label #xout{
 }
 
 #checkbox:checked ~ label #xout{
-    left: 190px;
-    transition: 1s ease;
+    animation: exit-button 1s ease forwards;
 }
 
 .visually-hidden{
@@ -336,9 +360,13 @@ ul li label{
 
 
 
-
-
-
-
 /* For other views */
-/* @media screen and (min-width: 800px) */
+@media screen and (min-width: 600px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    #main {
+        color: darkblue;
+    }
+}
